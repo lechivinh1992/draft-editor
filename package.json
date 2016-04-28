@@ -1,0 +1,40 @@
+{
+  "name": "draft-editor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel ./src --out-dir ./lib",
+    "sass": "cpx './src/**/*.{scss,jpg,png,json}' ./lib",
+    "build": "cross-env NODE_ENV=production npm run babel && npm run sass",
+    "clean": "rimraf ./lib",
+    "prebuild": "npm run clean",
+    "prepublish": "npm run build",
+    "dev": "cross-env NODE_ENV=development node ./bin/server",
+    "start": "cross-env NODE_ENV=production node ./bin/server"
+  },
+  "dependencies": {
+    "classnames": "^2.2.4",
+    "cross-env": "^1.0.7",
+    "draft-js": "~0.6.0",
+    "express": "^4.13.4",
+    "normalize.css": "^4.1.1",
+    "react": "^15.0.1",
+    "react-dev-deps": "~1.0.2",
+    "react-dom": "^15.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joehua87/draft-editor.git"
+  },
+  "keywords": [
+    "draft-js"
+  ],
+  "author": "joehua87",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joehua87/draft-editor/issues"
+  },
+  "homepage": "https://github.com/joehua87/draft-editor#readme"
+}
