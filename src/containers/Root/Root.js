@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import DraftEditor from '../../components/DraftEditor'
 import styles from './Root.scss'
+import '../../styles/common.css'
 import rawContent from './content.json'
 
 export default class Root extends Component {

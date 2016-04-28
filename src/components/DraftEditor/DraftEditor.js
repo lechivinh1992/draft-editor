@@ -7,6 +7,7 @@ import styles from './DraftEditor.scss'
 import customStyleMap from './../../customStyleMap'
 import SideToolbar from './../SideToolbar/SideToolbar'
 import InlineToolbar from './../InlineToolbar/InlineToolbar'
+import ImageChoose from '../ImageChooser'
 import {
   getSelectionRange,
   getSelectedBlockElement,
@@ -55,7 +56,17 @@ export default class DraftEditor extends Component {
     }
 
     this.setState({ editorState }, this.updateSelection)
-  }
+  };
+
+  onShowImageChooser = (e) => {
+    e.preventDefault()
+    this.setState({ showImageChooser: true })
+  };
+
+  onCloseImageChoose = (e) => {
+    e.preventDefault()
+    this.setState({ showImageChooser: false })
+  };
 
   changeRawContent = (rawContent) => {
     if (!rawContent || rawContent.blocks.length === 0) return
@@ -123,46 +134,30 @@ export default class DraftEditor extends Component {
         editorState={editorState}
         style={{ top: sideToolbarOffsetTop }}
         onChange={this.onChange}
-        onUploadImage={this.handleUploadImage}
+        onUploadImage={this.onShowImageChooser}
       />
     ) : null
 
-    // const toolbar = (
-    //   <div className={styles.toolbar}>
-    //     <div style={{ display: 'flex' }}>
-    //       <BlockStyleControls
-    //         className={styles.controls}
-    //         editorState={editorState}
-    //         onChange={this.onChange}
-    //       />
-    //       <span style={{ margin: '0 2rem 0 0.5rem' }}>|</span>
-    //     </div>
-    //     <div style={{ display: 'flex' }}>
-    //       <InlineStyleControls
-    //         className={styles.controls}
-    //         editorState={editorState}
-    //         onChange={this.onChange}
-    //       />
-    //       <span style={{ margin: '0 2rem 0 0.5rem' }}>|</span>
-    //       <ColorControls
-    //         className={styles.controls}
-    //         editorState={editorState}
-    //         onChange={this.onChange}
-    //       />
-    //     </div>
-    //     <div>
-    //       <button onMouseDown={this.promptForLink} style={{ marginRight: 10 }}>LINK</button>
-    //       <button onClick={this.logState} style={{ marginRight: 10 }}>Log State</button>
-    //     </div>
-    //   </div>
-    // )
+    const toolbar = (
+      <div className={styles.toolbar}>
+        <div>
+          <button onClick={this.logState} style={{ marginRight: 10 }}>Log State</button>
+        </div>
+      </div>
+    )
 
     return (
       <div className={styles.root}>
-        { /* toolbar */ }
+        {toolbar}
         <div id="editor" className={styles.editor} onClick={this.focus}>
           {sidebar}
           {inlineToolbar}
+          {this.state.showImageChooser && (
+            <ImageChoose
+              active={this.state.showImageChooser}
+              onClose={this.onCloseImageChoose}
+            />
+          )}
           <Editor
             ref="editor"
             editorState={editorState}
