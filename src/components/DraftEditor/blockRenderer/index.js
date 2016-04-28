@@ -1,6 +1,6 @@
 // import Html from './elements/Html'
 // import Markdown from './elements/Markdown'
-import Media from './elements/Media'
+import Media from 'elements/Media'
 import { Entity } from 'draft-js'
 
 export function blockRenderer(block) {

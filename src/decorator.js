@@ -1,5 +1,5 @@
 import { CompositeDecorator, Entity } from 'draft-js'
-import Link from './elements/Link'
+import Link from 'components/DraftEditor/blockRenderer/elements/Link'
 
 function findLinkEntities(contentBlock, callback) {
   contentBlock.findEntityRanges(

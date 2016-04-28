@@ -1,23 +1,17 @@
 import React, { Component, PropTypes } from 'react'
-import { Editor, EditorState, convertToRaw, convertFromRaw, ContentState } from 'draft-js'
-import BlockStyleControls from './controls/BlockStyleControls'
-import InlineStyleControls from './controls/InlineStyleControls'
-import ColorControls from './controls/ColorControls'
-import decorator from './decorator'
-// import { blockRenderer } from './blockRenderer'
+import { Editor, EditorState, convertToRaw, convertFromRaw } from 'draft-js'
+import decorator from './../../decorator'
 import blockRenderer from './editorBlockRenderer'
-import getBlockStyle from './getBlockStyle'
+import getBlockStyle from './../../getBlockStyle'
 import styles from './DraftEditor.scss'
-import customStyleMap from './customStyleMap'
-import SideToolbar from './SideToolbar'
-import InlineToolbar from './InlineToolbar'
+import customStyleMap from './../../customStyleMap'
+import SideToolbar from './../SideToolbar/SideToolbar'
+import InlineToolbar from './../InlineToolbar/InlineToolbar'
 import {
   getSelectionRange,
   getSelectedBlockElement,
   getSelectionCoords
 } from './utils/selection'
-
-import './styles.css'
 
 export default class DraftEditor extends Component {
   static propTypes = {
@@ -44,6 +38,8 @@ export default class DraftEditor extends Component {
   onChange = (editorState) => {
     if (!editorState.getSelection().isCollapsed()) {
       const selectionRange = getSelectionRange()
+      if (!selectionRange || !selectionRange.endOffset) return
+
       const selectionCoords = getSelectionCoords(selectionRange)
       this.setState({
         inlineToolbar: {

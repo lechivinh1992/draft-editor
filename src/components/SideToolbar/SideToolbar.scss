@@ -1,0 +1,16 @@
+.root {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  width: 70px;
+}
+
+.root i {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+}

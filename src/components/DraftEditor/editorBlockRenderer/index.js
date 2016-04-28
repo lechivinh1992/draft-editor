@@ -1,8 +1,8 @@
 import React from 'react'
-import Media from '../elements/Media'
+import Media from '../blockRenderer/elements/Media'
 import { Entity } from 'draft-js'
 import DraftEditorBlock from 'draft-js/lib/DraftEditorBlock.react'
-import { BLOCK_TYPES } from '../types'
+import { BLOCK_TYPES } from '../../../types'
 
 // function wrap(name) {
 //   return (Component) => (props) => (

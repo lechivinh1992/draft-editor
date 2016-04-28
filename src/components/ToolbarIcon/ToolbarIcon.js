@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react'
 import classNames from 'classnames'
+import styles from './ToolbarIcon.scss'
 
 const ToolbarIcon = ({ label, icon, active, onToggle, style }) => (
   <li
-    className={classNames('toolbar-icon', { active })}
+    className={classNames(styles.root, { [styles.active]: active })}
     onMouseDown={(e) => {
       e.preventDefault()
       onToggle(style)

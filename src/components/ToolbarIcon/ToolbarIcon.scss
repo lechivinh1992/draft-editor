@@ -1,0 +1,52 @@
+.root {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  color: #444;
+  font-family: 'Roboto';
+  font-size: 1.4rem;
+  border-bottom: 3px solid #444;
+  transition: all 0.15s linear;
+  cursor: pointer;
+  padding: 0 0.5rem;
+
+  :first-child {
+    border-bottom-left-radius: 3px;
+  }
+
+  :last-child {
+    border-bottom-right-radius: 3px;
+  }
+
+  :hover {
+    color: #c95339;
+    border-color: #c95339;
+  }
+
+  :hover i {
+    color: #c95339;
+  }
+
+  i {
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-size: 1.8rem;
+  }
+}
+
+.active {
+  color: #c95339;
+  border-color: #c95339;
+}
+
+.active i {
+  color: #c95339;
+}
