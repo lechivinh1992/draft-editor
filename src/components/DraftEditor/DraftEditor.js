@@ -1,12 +1,13 @@
 import React, { Component, PropTypes } from 'react'
 import { Editor, EditorState, convertToRaw, convertFromRaw } from 'draft-js'
-import decorator from './../../decorator'
-import blockRenderer from './editorBlockRenderer'
-import getBlockStyle from './../../getBlockStyle'
+import decorator from '../../decorator'
+import blockRenderer from './blockRenderer'
+import getBlockStyle from '../../getBlockStyle'
 import styles from './DraftEditor.scss'
-import customStyleMap from './../../customStyleMap'
-import SideToolbar from './../SideToolbar/SideToolbar'
-import InlineToolbar from './../InlineToolbar/InlineToolbar'
+import customStyleMap from '../../customStyleMap'
+import SideToolbar from '../SideToolbar/SideToolbar'
+import InlineToolbar from '../InlineToolbar'
+import LinkInput from './../LinkInput'
 import ImageChoose from '../ImageChooser'
 import {
   getSelectionRange,
@@ -121,12 +122,22 @@ export default class DraftEditor extends Component {
       // sideToolbarOffsetTop = (blockBounds.bottom) - 31 // height of side toolbar
     }
 
-    const inlineToolbar = this.state.inlineToolbar.show ? (
+    const inlineToolbar = this.state.inlineToolbar.show && !this.state.showURLInput ? (
       <InlineToolbar
         editorState={editorState}
         onChange={this.onChange}
         position={this.state.inlineToolbar.position}
       />
+    ) : null
+
+    const linkInput = this.state.showURLInput ? (
+      <LinkInput
+        editorState={editorState}
+        onChange={this.onChange}
+        position={this.state.inlineToolbar.position}
+      >
+        <input ref="url" />
+      </LinkInput>
     ) : null
 
     const sidebar = selectedBlock ? (
@@ -142,6 +153,7 @@ export default class DraftEditor extends Component {
       <div className={styles.toolbar}>
         <div>
           <button onClick={this.logState} style={{ marginRight: 10 }}>Log State</button>
+          <button onClick={this.promptForLink} style={{ marginRight: 10 }}>Link</button>
         </div>
       </div>
     )
@@ -152,6 +164,7 @@ export default class DraftEditor extends Component {
         <div id="editor" className={styles.editor} onClick={this.focus}>
           {sidebar}
           {inlineToolbar}
+          {linkInput}
           {this.state.showImageChooser && (
             <ImageChoose
               active={this.state.showImageChooser}

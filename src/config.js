@@ -2,9 +2,9 @@ const env = process.env.NODE_ENV || 'development'
 
 module.exports = {
   production: {
-    port: '2030',
+    port: '2400',
   },
   development: {
-    port: '3030',
+    port: '3400',
   },
 }[env]

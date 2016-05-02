@@ -4,7 +4,6 @@ import { Entity } from 'draft-js'
 export default (props) => {
   const entity = Entity.get(props.block.getEntityAt(0))
   const { html } = entity.getData()
-  console.log(entity.getData())
   return (
     <div id="content" dangerouslySetInnerHTML={{ __html: html }} />
   )

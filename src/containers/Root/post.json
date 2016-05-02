@@ -1,0 +1,552 @@
+{
+  "entityMap": {
+    "0": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "href": "http://alice87.danleeghb1.hop.clickbank.net/?tid=abc",
+        "alt": ""
+      }
+    },
+    "1": {
+      "type": "html",
+      "mutability": "IMMUTABLE",
+      "data": {
+        "html": ""
+      }
+    },
+    "2": {
+      "type": "html",
+      "mutability": "IMMUTABLE",
+      "data": {
+        "html": "<a href=\"http://alice87.danleeghb1.hop.clickbank.net/?tid=abc\"><h3 align=\"center\">Click here to Find out 3 Proven Steps to <b>Reverse Type 2 Diabetes</b> Discovered by Newcastle University</h3></a>"
+      }
+    }
+  },
+  "blocks": [
+    {
+      "key": "4hf9o",
+      "text": "Have you ever wondered what your doctor didn't tell you about reversing type 2 diabetes?",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8628e",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "79cnt",
+      "text": "Each time you visit your doctor, he or she probably tells you to limit sugar intake and more exercise, but are there other effective ways to keep your diabetes in check?",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "r1ie",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "e0g07",
+      "text": "Discover 3 Proven Steps to REVERSE type 2 diabetes from a recent Newcastle University medical study",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 0,
+          "length": 99,
+          "style": "BOLD"
+        },
+        {
+          "offset": 0,
+          "length": 99,
+          "style": "green"
+        }
+      ],
+      "entityRanges": [
+        {
+          "offset": 0,
+          "length": 99,
+          "key": 0
+        }
+      ]
+    },
+    {
+      "key": "asiem",
+      "text": " ",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 0,
+          "length": 1,
+          "key": 1
+        }
+      ]
+    },
+    {
+      "key": "6g9p",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "4v38t",
+      "text": "Here’s 3 tricks to manage your diabetes that your doctor won’t tell you:",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "etj85",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "dj12q",
+      "text": "In this post, you'll discover 3 simple TRICKS to control blood sugar that your doctor didn't tell you about.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "tj1o",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8ksic",
+      "text": "Controlling Blood Sugar TRICK #1: Eat More Fat",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "epedg",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "29j3q",
+      "text": "Yes! MORE fat!",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "fp5ao",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "58fpv",
+      "text": "Why? Because fat doesn't raise your blood sugar like carbohydrate or protein. Simple as that!",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "afl71",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "1b0j2",
+      "text": "The trick here is: it MUST be the RIGHT type of fat.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 19,
+          "length": 33,
+          "style": "BOLD"
+        }
+      ],
+      "entityRanges": []
+    },
+    {
+      "key": "5dmbo",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "cppf7",
+      "text": "Not all fats are created equal. Keep yourself away from hydrogenated fat or trans fat (found in processed and canned foods), they'll make your condition worse.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "4bu3v",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "enqmj",
+      "text": "Instead, look for Unsaturated Omega-3 Fat",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 18,
+          "length": 23,
+          "style": "BOLD"
+        }
+      ],
+      "entityRanges": []
+    },
+    {
+      "key": "2n75a",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "24a7g",
+      "text": "Some excellent sources of unsaturated omega-3 fat are:",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8pcfr",
+      "text": "- Fatty fish like salmon, mackerel, sardine, etc.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "eq8ar",
+      "text": "- Grass-fed beef",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "27jf1",
+      "text": "- Olive oil",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "efo8d",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8ft8i",
+      "text": "Controlling Blood Sugar TRICK #2: Get Some Push-ups or Any Kind of Strength Exercise",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "dilua",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "6cm5i",
+      "text": "Cardio exercise does help, but strength exercise will provide you greater result.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "fbaq9",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "fj64p",
+      "text": "Because in order to keep your blood sugar under control, you need to get your entire body moving.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "305td",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "a04",
+      "text": "And the BEST way to do that is STRENGTH EXERCISE.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "h0kj",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "drcjs",
+      "text": "You certainly do NOT have to put a lot of pressure on yourself, but JUST a few push-ups and some squats per day will give you a full control of your blood sugar levels.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "6e5va",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "2p7g2",
+      "text": "Strength exercise also helps you ditch your stress as well as gain tons of energy.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "36as5",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "5svc4",
+      "text": "Controlling Blood Sugar TRICK #3: Get Relaxed!",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "fv0aq",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8tqpk",
+      "text": "Stress can sabotage all of your attempt to control your blood sugar. It causes both physical and mental distress on the body, which makes keeping blood sugar levels harder.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "d5845",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "9a360",
+      "text": "Not to mention, when you are stressed, you tend to overeat. And this surely can make your blood sugar skyrocket.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "79lhb",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "6268k",
+      "text": "With all that said, staying calm and relax are vital in regulating blood sugar.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "a5vcd",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "3h5v3",
+      "text": "You can try different methods to help you relax. Such simple method like meditation or breathing exercise does great!",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "67s8l",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "cbqq9",
+      "text": "These tricks will help, but…",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "d88bf",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "e19ad",
+      "text": "If you are looking for a way to permanently REVERSE your Type 2 Diabetes and never worry about your blood sugar again, here’s what you need:",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "b64gi",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "ble2",
+      "text": "A recent medical breakthrough at Newcastle University has revealed 3 Proven Steps to Reverse Type-2 Diabetes.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 0,
+          "length": 109,
+          "style": "BOLD"
+        },
+        {
+          "offset": 0,
+          "length": 109,
+          "style": "green"
+        }
+      ],
+      "entityRanges": []
+    },
+    {
+      "key": "ehn67",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "aubk2",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "4pge7",
+      "text": " ",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 0,
+          "length": 1,
+          "key": 2
+        }
+      ]
+    },
+    {
+      "key": "7i3ap",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-/* eslint-disable no-console, no-use-before-define */
+/* eslint-disable no-console, no-use-before-define, no-underscore-dangle, global-require  */
 
 import Express from 'express'
 import path from 'path'
