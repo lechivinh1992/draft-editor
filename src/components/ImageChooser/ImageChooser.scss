@@ -1,0 +1,9 @@
+.imageList {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.image {
+  margin: 5px;
+}

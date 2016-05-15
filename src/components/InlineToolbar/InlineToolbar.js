@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { RichUtils, EditorState, Modifier } from 'draft-js'
+import { RichUtils, Entity, EditorState, Modifier } from 'draft-js'
 import ToolbarIcon from '../ToolbarIcon'
 import { INLINE_STYLES, COLORS } from '../../types'
 import { colorStyleMap } from '../../customStyleMap'
@@ -9,13 +9,19 @@ export default class InlineToolbar extends Component {
   static propTypes = {
     editorState: PropTypes.object,
     onChange: PropTypes.func.isRequired,
+    onChangeSimple: PropTypes.func.isRequired,
     position: PropTypes.shape({
       top: PropTypes.number,
       left: PropTypes.number,
     }),
   };
 
-  onToggle = (inlineStyle) => {
+  state = {
+    isLinkEdit: false,
+    url: ''
+  };
+
+  onToggleStyle = (inlineStyle) => {
     const { onChange, editorState } = this.props
     onChange(
       RichUtils.toggleInlineStyle(
@@ -24,6 +30,27 @@ export default class InlineToolbar extends Component {
       )
     )
   };
+
+  onApplyEntity = () => {
+    const { editorState } = this.props
+
+    const entityKey = Entity.create('link-to', 'MUTABLE', { id: 'hello' })
+    const contentState = editorState.getCurrentContent()
+
+    const entity = Modifier.applyEntity(
+      contentState,
+      editorState.getSelection(),
+      entityKey
+    )
+
+    const nextEditorState = EditorState.push(
+      editorState,
+      entity,
+      'apply-entity'
+    )
+
+    this.props.onChangeSimple(nextEditorState)
+  }
 
   onToggleColor = (toggledColor) => {
     const { editorState, onChange } = this.props
@@ -63,9 +90,55 @@ export default class InlineToolbar extends Component {
     onChange(nextEditorState)
   };
 
+  onShowLinkEdit = () => {
+    this.setState({ isLinkEdit: true, url: '' }, () => this.refs.url.focus())
+  };
+
+  onUrlChange = (e) => this.setState({ url: e.target.value });
+
+  onConfirmLink = (e) => {
+    e.preventDefault()
+    this.confirmLink(this.state.url)
+  };
+
+  onUrlEnterKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      e.preventDefault()
+      this.confirmLink(this.state.url)
+    }
+  };
+
+  confirmLink = (urlValue) => {
+    const { editorState } = this.props
+    const entityKey = Entity.create('LINK', 'MUTABLE', { url: urlValue, alt: 'Hello' })
+    const nextEditorState = RichUtils.toggleLink(
+      editorState,
+      editorState.getSelection(),
+      entityKey
+    )
+
+    this.props.onChangeSimple(nextEditorState)
+    this.setState({ isLinkEdit: false, url: '' })
+  };
+
   render() {
     const { editorState, position } = this.props
     const currentStyle = editorState.getCurrentInlineStyle()
+
+    if (this.state.isLinkEdit) {
+      return (
+        <div id="inlineToolbar" className={toolbar} style={position}>
+          <input
+            type="text" ref="url"
+            value={this.state.url}
+            onChange={this.onUrlChange}
+            onKeyDown={this.onUrlEnterKeyDown}
+          />
+          <button onClick={this.onConfirmLink}>Confirm Link</button>
+        </div>
+      )
+    }
+
     return (
       <div id="inlineToolbar" className={toolbar} style={position}>
         <div>
@@ -76,7 +149,7 @@ export default class InlineToolbar extends Component {
                 active={currentStyle.has(type.style)}
                 label={type.label}
                 icon={type.icon}
-                onToggle={this.onToggle}
+                onToggle={this.onToggleStyle}
                 style={type.style}
               />
             )}
@@ -90,6 +163,22 @@ export default class InlineToolbar extends Component {
                 style={type.style}
               />
             )}
+            <ToolbarIcon
+              // key={type.label || type.icon}
+              // active={currentStyle.has(type.style)}
+              label="Link"
+              icon="link"
+              onToggle={this.onShowLinkEdit}
+              // style={type.style}
+            />
+            <ToolbarIcon
+              // key={type.label || type.icon}
+              // active={currentStyle.has(type.style)}
+              label="Link To"
+              icon="more"
+              onToggle={this.onApplyEntity}
+              // style={type.style}
+            />
           </ul>
         </div>
       </div>

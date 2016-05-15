@@ -24,4 +24,10 @@ const styles = {
   },
 }
 
-export default (props) => <img src={props.src} style={styles.media} />
+export default (props) => (
+  <div>
+    <img src={props.src} style={styles.media} alt={props.caption} />
+    <p>{props.caption}</p>
+    <p>{props.alignment}</p>
+  </div>
+)

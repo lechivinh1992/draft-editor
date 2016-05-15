@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react'
-import { Editor, EditorState, convertToRaw, convertFromRaw } from 'draft-js'
+import { Editor, EditorState, Entity, RichUtils, AtomicBlockUtils, convertToRaw, convertFromRaw } from 'draft-js'
+import { Map } from 'immutable'
 import decorator from '../../decorator'
 import blockRenderer from './blockRenderer'
 import getBlockStyle from '../../getBlockStyle'
@@ -22,7 +23,8 @@ export default class DraftEditor extends Component {
 
   state = {
     editorState: EditorState.createEmpty(decorator),
-    inlineToolbar: { show: false }
+    inlineToolbar: { show: false },
+    editors: Map(),
   };
 
   componentWillMount() {
@@ -59,6 +61,10 @@ export default class DraftEditor extends Component {
     this.setState({ editorState }, this.updateSelection)
   };
 
+  onChangeSimple = (editorState) => {
+    this.setState({ editorState })
+  };
+
   onShowImageChooser = (e) => {
     e.preventDefault()
     this.setState({ showImageChooser: true })
@@ -67,6 +73,17 @@ export default class DraftEditor extends Component {
   onCloseImageChoose = (e) => {
     e.preventDefault()
     this.setState({ showImageChooser: false })
+  };
+
+  onStartEdit = (blockKey) => {
+    const { editors } = this.state
+    // Determine which is editing
+    this.setState({ editors: editors.set(blockKey, true) })
+  };
+
+  onFinishEdit = (blockKey) => {
+    const { editors } = this.state
+    this.setState({ editors: editors.remove(blockKey) })
   };
 
   changeRawContent = (rawContent) => {
@@ -83,6 +100,11 @@ export default class DraftEditor extends Component {
     console.log(JSON.stringify(convertToRaw(content), null, 2))
   };
 
+  test = () => {
+    console.log('currentBlockContainsLink', RichUtils.currentBlockContainsLink(this.state.editorState))
+    console.log('getCurrentBlockType', RichUtils.getCurrentBlockType(this.state.editorState))
+  };
+
   promptForLink = (e) => {
     e.preventDefault()
     const { editorState } = this.state
@@ -95,6 +117,54 @@ export default class DraftEditor extends Component {
         setTimeout(() => this.refs.url.focus(), 0)
       })
     }
+  };
+
+  addImage = () => {
+    const src = window.prompt('Enter a URL')
+    console.log(src)
+
+    if (!src) {
+      return
+    }
+
+    const entityKey = Entity.create('image', 'IMMUTABLE', {
+      src,
+      alignment: 'left',
+      caption: 'This image caption here'
+    })
+    const editorState = AtomicBlockUtils.insertAtomicBlock(
+      this.state.editorState,
+      entityKey,
+      ' '
+    )
+    this.onChange(editorState)
+  };
+
+  openCloudinary() {
+    cloudinary.openUploadWidget({ cloud_name: 'dpl3us1zw', upload_preset: 'qlolfyyu' },
+      (error, result) => {
+        console.log(error, result)
+      })
+  }
+
+  confirmLink = (e) => {
+    e.preventDefault()
+    const { editorState, urlValue } = this.state
+    console.log(urlValue)
+    const entityKey = Entity.create('LINK', 'MUTABLE', { url: urlValue, alt: 'Hello' })
+
+    this.onChange(RichUtils.toggleLink(
+      editorState,
+      editorState.getSelection(),
+      entityKey
+    ))
+
+    this.setState({
+      showURLInput: false,
+      urlValue: '',
+    }, () => {
+      setTimeout(() => this.refs.editor.focus(), 0)
+    })
   };
 
   updateSelection = () => {
@@ -126,6 +196,7 @@ export default class DraftEditor extends Component {
       <InlineToolbar
         editorState={editorState}
         onChange={this.onChange}
+        onChangeSimple={this.onChangeSimple}
         position={this.state.inlineToolbar.position}
       />
     ) : null
@@ -136,7 +207,15 @@ export default class DraftEditor extends Component {
         onChange={this.onChange}
         position={this.state.inlineToolbar.position}
       >
-        <input ref="url" />
+        <div>
+          <input
+            ref="url"
+            onChange={(e) => { this.setState({ urlValue: e.target.value }) }}
+          />
+          <button onMouseDown={this.confirmLink}>
+            Confirm
+          </button>
+        </div>
       </LinkInput>
     ) : null
 
@@ -153,10 +232,18 @@ export default class DraftEditor extends Component {
       <div className={styles.toolbar}>
         <div>
           <button onClick={this.logState} style={{ marginRight: 10 }}>Log State</button>
+          <button onClick={this.test} style={{ marginRight: 10 }}>Test</button>
           <button onClick={this.promptForLink} style={{ marginRight: 10 }}>Link</button>
+          <button onClick={this.addImage} style={{ marginRight: 10 }}>Add Image</button>
+          <button onClick={this.openCloudinary} style={{ marginRight: 10 }}>Open Cloudinary</button>
         </div>
       </div>
     )
+
+    const customBlockRenderer = (block) => blockRenderer(block, {
+      startEdit: this.onStartEdit,
+      finishEdit: this.onFinishEdit
+    })
 
     return (
       <div className={styles.root}>
@@ -175,10 +262,11 @@ export default class DraftEditor extends Component {
             ref="editor"
             editorState={editorState}
             blockStyleFn={getBlockStyle}
-            blockRendererFn={blockRenderer}
+            blockRendererFn={customBlockRenderer}
             customStyleMap={customStyleMap}
             onChange={this.onChange}
             placeholder="Write something..."
+            readOnly={this.state.editors.count()}
             spellCheck
           />
         </div>

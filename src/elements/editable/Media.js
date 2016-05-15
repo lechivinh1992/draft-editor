@@ -1,19 +1,19 @@
 import React from 'react'
 import { Entity } from 'draft-js'
 import Image from './Image'
-import Table from './Table'
 
 export default (props) => {
   const entity = Entity.get(props.block.getEntityAt(0))
-  const { src, alignment, caption, entities } = entity.getData()
+  const { src, alt, alignment, caption } = entity.getData()
   const type = entity.getType()
+
+  const { blockProps } = props
 
   let component
   if (type === 'image') {
-    component = <Image src={src} alignment={alignment} caption={caption} />
-  }
-  if (type === 'table') {
-    component = <Table entities={entities} />
+    component = (
+      <Image src={src} alignment={alignment} alt={alt} caption={caption} block={props.block} blockProps={blockProps} />
+    )
   }
 
   return component

@@ -1,10 +1,10 @@
 import { Entity } from 'draft-js'
 import DraftEditorBlock from 'draft-js/lib/DraftEditorBlock.react'
-import Media from '../../elements/readOnly/Media'
+import Media from '../../elements/editable/Media'
 import Html from '../../elements/readOnly/Html'
 import Markdown from '../../elements/readOnly/Markdown'
 
-export default function blockRenderer(block) {
+export default function blockRenderer(block, props) {
   if (block.getType() === 'atomic') {
     let type
     try {
@@ -28,12 +28,12 @@ export default function blockRenderer(block) {
         return {
           component: Media,
           editable: false,
+          props
         }
     }
   }
 
   return {
     component: DraftEditorBlock,
-    editable: true
   }
 }
