@@ -1,40 +1,211 @@
 {
   "entityMap": {
     "0": {
-      "type": "image",
+      "type": "html",
       "mutability": "IMMUTABLE",
       "data": {
-        "src": "http://24h-img.24hstatic.com/upload/2-2016/images/2016-05-15/1463277453-5000mu-3.jpg",
-        "alignment": "left",
-        "caption": "This image caption here"
+        "html": "<table>\n\t<tr>\n\t\t<th>Life Stage</th>\n\t\t<th>Age</th>\n\t\t<th>Males (mg/day)</th>\n\t\t<th>Females (mg/day)</th>\n\t</tr>\n\t<tr>\n\t\t<td>Infants</td>\n\t\t<td>0-6 months</td>\n\t\t<td>30 (AI)</td>\n\t\t<td>30 (AI)</td>\n\t</tr>\n\t<tr>\n\t\t<td>Infants</td>\n\t\t<td>7-12 months</td>\n\t\t<td>75 (AI)</td>\n\t\t<td>75 (AI)</td>\n\t</tr>\n\t<tr>\n\t\t<td>Children</td>\n\t\t<td>1-3 years </td>\n\t\t<td>80</td>\n\t\t<td>80</td>\n\t</tr>\n\t<tr>\n\t\t<td>Children</td>\n\t\t<td>4-8 years</td>\n\t\t<td>130</td>\n\t\t<td>130</td>\n\t</tr>\n\t<tr>\n\t\t<td>Children</td>\n\t\t<td>9-13 years</td>\n\t\t<td>240</td>\n\t\t<td>240</td>\n\t</tr>\n\t<tr>\n\t\t<td>Adolescents</td>\n\t\t<td>14-18 years </td>\n\t\t<td>410</td>\n\t\t<td>360</td>\n\t</tr>\n\t<tr>\n\t\t<td>Adults</td>\n\t\t<td>19-30 years </td>\n\t\t<td>400</td>\n\t\t<td>310</td>\n\t</tr>\n\t<tr>\n\t\t<td>Adults</td>\n\t\t<td>31 years and older</td>\n\t\t<td>420</td>\n\t\t<td>320</td>\n\t</tr>\n\t<tr>\n\t\t<td>Pregnancy</td>\n\t\t<td>18 years and younger</td>\n\t\t<td> - </td>\n\t\t<td>400</td>\n\t</tr>\n\t<tr>\n\t\t<td>Pregnancy</td>\n\t\t<td>19-30 years</td>\n\t\t<td> - </td>\n\t\t<td>350</td>\n\t</tr>\n\t<tr>\n\t\t<td>Pregnancy</td>\n\t\t<td>31 years and older</td>\n\t\t<td> - </td>\n\t\t<td>360</td>\n\t</tr>\n\t<tr>\n\t\t<td>Breast-feeding</td>\n\t\t<td>18 years and younger</td>\n\t\t<td> - </td>\n\t\t<td>360</td>\n\t</tr>\n\t<tr>\n\t\t<td>Breast-feeding</td>\n\t\t<td>19-30 years</td>\n\t\t<td> - </td>\n\t\t<td>310</td>\n\t</tr>\n\t<tr>\n\t\t<td>Breast-feeding</td>\n\t\t<td>31 years and older</td>\n\t\t<td> - </td>\n\t\t<td>320</td>\n\t</tr>\n</table>"
       }
     },
     "1": {
       "type": "link",
       "mutability": "MUTABLE",
       "data": {
-        "href": "http://alice87.danleeghb1.hop.clickbank.net/?tid=abc",
-        "alt": ""
+        "alt": "",
+        "href": "http://lpi.oregonstate.edu/mic/minerals/magnesium"
       }
     },
     "2": {
-      "type": "html",
-      "mutability": "IMMUTABLE",
+      "type": "link",
+      "mutability": "MUTABLE",
       "data": {
-        "html": ""
+        "href": "<a href=\"#magnesium-rich-foods\">foods high in magnesium</a>",
+        "alt": ""
       }
     },
     "3": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "href": "http://youdecideyourhealth.com/posts/risk-of-magnesium-deficiency",
+        "alt": ""
+      }
+    },
+    "4": {
+      "type": "image",
+      "mutability": "IMMUTABLE",
+      "data": {
+        "src": "https://s3.amazonaws.com/betterlife/images/PNG/medicine-297778_640.png"
+      }
+    },
+    "5": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "href": "http://youdecideyourhealth.com/posts/risk-of-magnesium-deficiency#magnesium-deficiency-symptoms",
+        "alt": ""
+      }
+    },
+    "6": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "href": "http://www.ncbi.nlm.nih.gov/pubmed/17645588",
+        "alt": ""
+      }
+    },
+    "7": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "href": "http://onlinelibrary.wiley.com/doi/10.1111/j.1463-1326.2010.01332.x/abstract",
+        "alt": ""
+      }
+    },
+    "8": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "alt": "",
+        "href": "http://www.ncbi.nlm.nih.gov/pubmed/19020533"
+      }
+    },
+    "9": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "alt": "",
+        "href": "http://www.ncbi.nlm.nih.gov/pubmed/8587088"
+      }
+    },
+    "10": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "alt": "",
+        "href": "http://www.ncbi.nlm.nih.gov/pubmed/9523054"
+      }
+    },
+    "11": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "alt": "",
+        "href": "http://www.ncbi.nlm.nih.gov/pubmed/9703590"
+      }
+    },
+    "12": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "alt": "",
+        "href": "http://www.ncbi.nlm.nih.gov/pubmed/17645588?dopt=Abstract"
+      }
+    },
+    "13": {
       "type": "html",
       "mutability": "IMMUTABLE",
       "data": {
-        "html": "<a href=\"http://alice87.danleeghb1.hop.clickbank.net/?tid=abc\"><h3 align=\"center\">Click here to Find out 3 Proven Steps to <b>Reverse Type 2 Diabetes</b> Discovered by Newcastle University</h3></a>"
+        "html": "<h2 id=\"how-to-choose-magnesium-supplements\">How to choose the best magnesium supplement</h2>"
+      }
+    },
+    "14": {
+      "type": "image",
+      "mutability": "IMMUTABLE",
+      "data": {
+        "src": "https://s3.amazonaws.com/betterlife/images/resized-400/2015-12-23/pills-3.jpg"
+      }
+    },
+    "15": {
+      "type": "table",
+      "mutability": "IMMUTABLE",
+      "data": {
+        "columns": [
+          "Supplement Brand\tSize"
+        ],
+        "data": [
+          {
+            "Supplement Brand\tSize": "Source Naturals Magnesium Malate 1250mg\t360 Tablets"
+          },
+          {
+            "Supplement Brand\tSize": "Doctor's Best High Absorption 100% Chelated Magnesium\t240 Tablets"
+          },
+          {
+            "Supplement Brand\tSize": "Magnesium Glycinate Chelate (300mg) from IntraNaturals\t120 Capsules"
+          },
+          {
+            "Supplement Brand\tSize": "KAL - Magnesium Glycinate 400\t180 Tablets"
+          },
+          {
+            "Supplement Brand\tSize": "Now Foods Magnesium Citrate 200mg"
+          },
+          {
+            "Supplement Brand\tSize": "Viva Labs 100% Chelated Magnesium\t240 Tablets"
+          },
+          {
+            "Supplement Brand\tSize": "Sundown Naturals Magnesium 500 mg\t180 Caplets"
+          }
+        ]
+      }
+    },
+    "16": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "alt": "",
+        "href": "http://www.ncbi.nlm.nih.gov/pubmed/8403198"
+      }
+    },
+    "17": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "alt": "",
+        "href": "http://www.ncbi.nlm.nih.gov/pubmed/8269623"
+      }
+    },
+    "18": {
+      "type": "html",
+      "mutability": "IMMUTABLE",
+      "data": {
+        "html": "<h5><a href=\"#magnesiumTable\">Amazon Best-Sellers Magnesium Supplements Comparison</a></h5>"
+      }
+    },
+    "19": {
+      "type": "html",
+      "mutability": "IMMUTABLE",
+      "data": {
+        "html": "<table id=\"magnesiumTable\">\n\t<tr>\n\t\t<th>Supplement Brand</th>\n\t\t<th>Size</th>\n\t\t<th>Price One Time Purchase</th>\n\t\t<th>Price/Count One time purchase</th>\n\t\t<th>Price Subscribe & Save</th>\n\t\t<th>Price/Count Subscribe & Save</th>\n\t\t<th>Active Compound</th>\n\t\t<th>Easy to Absorb?</th>\n\t\t<th>Best For</th>\n\t\t<th>Serving </th>\n\t\t<th>Ingredients</th>\n\t\t<th>Pill sizes</th>\n\t\t<th>Mg/serving</th>\n\t\t<th>% DV/serving</th>\n\t\t<th>% DV/pill</th>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Source-Naturals-Magnesium-Malate-Tablets/dp/B000GFJJKQ/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=ydyh-20&linkId=7c260ea912716f6b6e3d0e062ccac73e\">Source Naturals Magnesium Malate 1250mg</a></td>\n\t\t<td>360 Tablets</td>\n\t\t<td>$19.50 </td>\n\t\t<td>$0.05 </td>\n\t\t<td>$18.52 </td>\n\t\t<td>$0.05 </td>\n\t\t<td>Magnesium Malate</td>\n\t\t<td>Yes</td>\n\t\t<td>People suffering from fatigue</td>\n\t\t<td>3 tablets/serving</td>\n\t\t<td>Stearic Acid, Acacia Gum, Modified Cellulose Gum, Colloidal Silicon Dioxide, and Magnesium Stearate.<br>NO sugar, preservatives, or artificial color, flavor or fragrance, gluten-free</td>\n\t\t<td>3/4\" long x 1/4\" wide</td>\n\t\t<td>425mg/serving</td>\n\t\t<td>106%</td>\n\t\t<td>35%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Doctors-Best-Absorption-Magnesium-Elemental/dp/B000BD0RT0/ref=as_li_ss_tl?s=hpc&ie=UTF8&qid=1459590132&sr=1-1&keywords=Doctor%27s+Best+High+Absorption+100%25+Chelated+Magnesium&linkCode=ll1&tag=ydyh-20&linkId=74f3949c61dfd24cc90e303758b3c3a9\">Doctor's Best High Absorption 100% Chelated Magnesium</a></td>\n\t\t<td>240 Tablets</td>\n\t\t<td>$14.61 </td>\n\t\t<td>$0.06 </td>\n\t\t<td>$15.38 </td>\n\t\t<td>$0.06 </td>\n\t\t<td>Magnesium lysinate glycinate chelate</td>\n\t\t<td>Yes</td>\n\t\t<td>People with long-term deficiency</td>\n\t\t<td>2 tablets/serving</td>\n\t\t<td>Magnesium (elemental) 200 mg (from 2,000 mg magnesium glycinate/lysinate chelate*) per serving, Cellulose, stearic acid, croscarmellose sodium, hypromellose, magnesium stearate (vegetable source).<br>Vegan, Non-GMO, and Gluten Free</td>\n\t\t<td>7/8\" long x 1/4 \" wide</td>\n\t\t<td>200mg/serving</td>\n\t\t<td>50%</td>\n\t\t<td>25%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Magnesium-IntraNaturals-Non-Buffered-Bioavailability-Absorption/dp/B010HJXQMC/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=ydyh-20&linkId=43ae6d3de2c6879c6df95022bf7a6baf\">Magnesium Glycinate Chelate (300mg) from IntraNaturals</a></td>\n\t\t<td>120 Capsules</td>\n\t\t<td>$19.95 </td>\n\t\t<td>$0.17 </td>\n\t\t<td>$18.95 </td>\n\t\t<td>$0.16 </td>\n\t\t<td> Magnesium Glycinate </td>\n\t\t<td>Yes</td>\n\t\t<td>People with long-term deficiency</td>\n\t\t<td>2 capsules/serving</td>\n\t\t<td>Magnesium (as Magnesium bisglycinate chelate) (TRAACS), Plant Cellulose, Vegetable Magnesium Stearate.<br>Vegan, non-GMO, gluten free soy free\"</td>\n\t\t<td>2/5\" long x 1/4 \" thick</td>\n\t\t<td>150mg/serving</td>\n\t\t<td>38%</td>\n\t\t<td>19%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/KAL-Magnesium-Glycinate-400-tablets/dp/B00013YZ1Q/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=ydyh-20&linkId=1fbe0d28dbd017156b83cd84b9000d22\">KAL - Magnesium Glycinate 400</a></td>\n\t\t<td>180 Tablets</td>\n\t\t<td>$21.89 </td>\n\t\t<td>$0.12 </td>\n\t\t<td>N/A</td>\n\t\t<td>N/A</td>\n\t\t<td>Magnesium Glycinate</td>\n\t\t<td>Yes</td>\n\t\t<td>People with long-term deficiency</td>\n\t\t<td>2 tablets/serving</td>\n\t\t<td>Cellulose, Stearic Acid, Silica and Magnesium Stearate</td>\n\t\t<td>N/A</td>\n\t\t<td>400 mg/serving</td>\n\t\t<td>100%</td>\n\t\t<td>50%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Now-Foods-Magnesium-Citrate-Tablets/dp/B000BV1O26/ref=as_li_ss_tl?s=hpc&ie=UTF8&qid=1459589727&sr=1-1&keywords=Now+Foods+Magnesium+Citrate&linkCode=ll1&tag=ydyh-20&linkId=f8995173988b87b9d7724334d565d2b3\">Now Foods Magnesium Citrate 200mg, 250 Tablets</a></td>\n\t\t<td>250 Tablets</td>\n\t\t<td>$13.26 </td>\n\t\t<td>$0.05 </td>\n\t\t<td>N/A</td>\n\t\t<td>N/A</td>\n\t\t<td>Magnesium citrate</td>\n\t\t<td>Yes</td>\n\t\t<td>People with constipation, rectal or colon problems but is unsuitable for those with loose bowel movements</td>\n\t\t<td>2 tablets/serving</td>\n\t\t<td>Magnesium 400 MG ( from Magnesium Citrate), Cellulose, Stearic acid (vegetable source), Croscarmellose Sodium, Magnesium Stearate (vegetable source), and Vegetable coating.<br>\tNot manufactured with wheat, gluten, soy, milk, eggs, fish, shellfish, or tree nut ingredients.</td>\n\t\t<td> 3/4\" long x 1/4\" wide x 1/4\" thick</td>\n\t\t<td>400 mg/serving</td>\n\t\t<td>100%</td>\n\t\t<td>50%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Viva-Labs-Magnesium-Bisglycinate-Chelate/dp/B00HQP51ZG/ref=as_li_ss_tl?s=hpc&ie=UTF8&qid=1459583024&sr=1-25-spons&keywords=magnesium&psc=1&linkCode=ll1&tag=ydyh-20&linkId=e419be777f268cf684818434d22acd6a\">Viva Labs 100% Chelated Magnesium</a></td>\n\t\t<td>240 Tablets</td>\n\t\t<td>$16.14 </td>\n\t\t<td>$0.07 </td>\n\t\t<td>$16.99 </td>\n\t\t<td>$0.07 </td>\n\t\t<td>Magnesium chelated</td>\n\t\t<td>Yes</td>\n\t\t<td>People with long-term deficiency</td>\n\t\t<td>2 tablets/serving</td>\n\t\t<td>Magnesium Bisglycinate chelate, modified cellulose, Vegetable Stearate, Silicone Dioxide, Glycerine</td>\n\t\t<td>3/4\" long  x 1/4\" thick</td>\n\t\t<td>200 mg/serving</td>\n\t\t<td>50%</td>\n\t\t<td>25%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Sundown-Naturals-Magnesium-500-Caplets/dp/B0045EHZNC/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=ydyh-20&linkId=2e8cb6ed66e5b8b8d3a99c666fc18152\">Sundown Naturals Magnesium 500 mg</a></td>\n\t\t<td>180 Caplets</td>\n\t\t<td>$4.98 </td>\n\t\t<td>$0.03 </td>\n\t\t<td>$4.73 </td>\n\t\t<td>$0.03 </td>\n\t\t<td>Magnesium Oxide</td>\n\t\t<td>No</td>\n\t\t<td>N/A</td>\n\t\t<td>1 caplet/serving</td>\n\t\t<td>Dicalcium Phosphate, Citric Acid, Vegetable Cellulose, Titanium Dioxide Color, Vegetable Magnesium Stearate<br>100% free of gluten & wheat, dairy & lactose, artificial flavors</td>\n\t\t<td>4/5\" long x 1/4\" wide x 1/5\" thick</td>\n\t\t<td>500mg/serving</td>\n\t\t<td>125%</td>\n\t\t<td>125%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Pure-Encapsulations-Magnesium-Glycinate-Count/dp/B0058HWV9S/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=ydyh-20&linkId=c3b34cae7b37cf2103be9a8d4d12bfb5\">Pure Encapsulations Magnesium Glycinate, 180 Count</a></td>\n\t\t<td>180 Capsules</td>\n\t\t<td>$32.60 </td>\n\t\t<td>$0.18 </td>\n\t\t<td>N/A</td>\n\t\t<td>N/A</td>\n\t\t<td>Magnesium Glycinate</td>\n\t\t<td>Yes</td>\n\t\t<td>People with long-term deficiency</td>\n\t\t<td>1 capsule/serving</td>\n\t\t<td>Magnesium (as Magnesium Glycinate) 120mg, Ascorbyl Palmitate (fat-soluble vitamin C) 10mg, Vegetarian capsule (cellulose, water)</td>\n\t\t<td>N/A</td>\n\t\t<td>120 mg/serving</td>\n\t\t<td>30%</td>\n\t\t<td>30%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Solaray-Magnesium-Glycinate-Supplement-Count/dp/B000Z1GLJI/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=ydyh-20&linkId=6091ccb89f9fe0c7e494e29278e8ed6c\">Solaray Magnesium Glycinate Supplement, 400 mg, 120 Count</a></td>\n\t\t<td>120 Capsules</td>\n\t\t<td>$12.15 </td>\n\t\t<td>$0.10 </td>\n\t\t<td>N/A</td>\n\t\t<td>N/A</td>\n\t\t<td>Magnesium Glycinate</td>\n\t\t<td>Yes</td>\n\t\t<td>People with long-term deficiency</td>\n\t\t<td>4 capsules/serving</td>\n\t\t<td>Magnesium glycinate, vegetable cellulose capsule, magnesium stearate, stearic acid, cellulose, silica</td>\n\t\t<td>3/4\" long</td>\n\t\t<td>400mg/serving</td>\n\t\t<td>100%</td>\n\t\t<td>25%</td>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"http://www.amazon.com/Cardiovascular-Research-Magnesium-Taurate-capsules/dp/B000OP5N12/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=ydyh-20&linkId=80ade49b8ae652ee184294b11f33f7aa\">Cardiovascular Research - Magnesium Taurate 125 mg, 180 capsules</a></td>\n\t\t<td>180 Capsules</td>\n\t\t<td>$19.40 </td>\n\t\t<td>$0.11 </td>\n\t\t<td>N/A</td>\n\t\t<td>N/A</td>\n\t\t<td>Magnesium Taurate</td>\n\t\t<td>Yes</td>\n\t\t<td>People with cardiovascular issues</td>\n\t\t<td>1 capsule/serving</td>\n\t\t<td>Magnesium Taurate 125 mg, Gelatin, Calcium Stearate, Silicon Dioxide, Cellulose Croscamellose Sodium</td>\n\t\t<td>N/A</td>\n\t\t<td>125mg/serving</td>\n\t\t<td>30%</td>\n\t\t<td>30%</td>\n\t</tr>\n</table>"
+      }
+    },
+    "20": {
+      "type": "link",
+      "mutability": "MUTABLE",
+      "data": {
+        "alt": "",
+        "href": "http://youdecideyourhealth.com/posts/best-transdermal-magnesium"
       }
     }
   },
   "blocks": [
     {
-      "key": "4hf9o",
+      "key": "9lt21",
+      "text": "Why you need magnesium supplements",
+      "type": "header-two",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8i378",
+      "text": "The body needs magnesium for over 300 chemical reactions and to stay healthy. Magnesium contributes to regulate muscle and nerve function, glucose metabolic, and blood pressure. It also responsible in making protein, bone & DNA.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "uefl",
       "text": "",
       "type": "unstyled",
       "depth": 0,
@@ -42,7 +213,23 @@
       "entityRanges": []
     },
     {
-      "key": "a6urm",
+      "key": "fva",
+      "text": "The recommended daily intake of magnesium differs by age and gender as table below:",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "bog8s",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "f0s7a",
       "text": " ",
       "type": "atomic",
       "depth": 0,
@@ -56,15 +243,7 @@
       ]
     },
     {
-      "key": "3udda",
-      "text": "Have you ever wondered what your doctor didn't tell you about reversing type 2 diabetes?",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "8628e",
+      "key": "5aq90",
       "text": "",
       "type": "unstyled",
       "depth": 0,
@@ -72,62 +251,49 @@
       "entityRanges": []
     },
     {
-      "key": "79cnt",
-      "text": "Each time you visit your doctor, he or she probably tells you to limit sugar intake and more exercise, but are there other effective ways to keep your diabetes in check?",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "r1ie",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "e0g07",
-      "text": "Discover 3 Proven Steps to REVERSE type 2 diabetes from a recent Newcastle University medical study",
+      "key": "76ehk",
+      "text": "Source: OSU",
       "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [
         {
           "offset": 0,
-          "length": 99,
-          "style": "BOLD"
-        },
-        {
-          "offset": 0,
-          "length": 99,
-          "style": "green"
+          "length": 11,
+          "style": "ITALIC"
         }
       ],
       "entityRanges": [
         {
-          "offset": 0,
-          "length": 99,
+          "offset": 8,
+          "length": 3,
           "key": 1
         }
       ]
     },
     {
-      "key": "asiem",
-      "text": " ",
-      "type": "atomic",
+      "key": "7g2q9",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "esvku",
+      "text": "You can get magnesium by eating a diet with foods high in magnesium such as green leafy vegetables, whole grains, nuts and seeds.",
+      "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [],
       "entityRanges": [
         {
-          "offset": 0,
-          "length": 1,
+          "offset": 44,
+          "length": 23,
           "key": 2
         }
       ]
     },
     {
-      "key": "6g9p",
+      "key": "4hfua",
       "text": "",
       "type": "unstyled",
       "depth": 0,
@@ -135,15 +301,15 @@
       "entityRanges": []
     },
     {
-      "key": "4v38t",
-      "text": "Here’s 3 tricks to manage your diabetes that your doctor won’t tell you:",
+      "key": "6lqb6",
+      "text": "However, diet alone may not provide enough magnesium for your body. Food quality, diet rich in refined carb and sugar, excessive alcohol consumption and some certain medical conditions may interfere with magnesium's absorption.",
       "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [],
       "entityRanges": []
     },
     {
-      "key": "etj85",
+      "key": "f7p6t",
       "text": "",
       "type": "unstyled",
       "depth": 0,
@@ -151,85 +317,21 @@
       "entityRanges": []
     },
     {
-      "key": "dj12q",
-      "text": "In this post, you'll discover 3 simple TRICKS to control blood sugar that your doctor didn't tell you about.",
+      "key": "810tb",
+      "text": "According to a report published by World Health Organization, 3/4 Americans have magnesium deficiency.",
       "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "tj1o",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "8ksic",
-      "text": "Controlling Blood Sugar TRICK #1: Eat More Fat",
-      "type": "header-four",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "epedg",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "29j3q",
-      "text": "Yes! MORE fat!",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "fp5ao",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "58fpv",
-      "text": "Why? Because fat doesn't raise your blood sugar like carbohydrate or protein. Simple as that!",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "afl71",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "1b0j2",
-      "text": "The trick here is: it MUST be the RIGHT type of fat.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
+      "entityRanges": [
         {
-          "offset": 19,
-          "length": 33,
-          "style": "BOLD"
+          "offset": 81,
+          "length": 21,
+          "key": 3
         }
-      ],
-      "entityRanges": []
+      ]
     },
     {
-      "key": "5dmbo",
+      "key": "e19ug",
       "text": "",
       "type": "unstyled",
       "depth": 0,
@@ -237,15 +339,15 @@
       "entityRanges": []
     },
     {
-      "key": "cppf7",
-      "text": "Not all fats are created equal. Keep yourself away from hydrogenated fat or trans fat (found in processed and canned foods), they'll make your condition worse.",
+      "key": "2dl79",
+      "text": "Therefore, taking magnesium supplement seems to be a good idea to provide your body sufficient magnesium amount.",
       "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [],
       "entityRanges": []
     },
     {
-      "key": "4bu3v",
+      "key": "emal0",
       "text": "",
       "type": "unstyled",
       "depth": 0,
@@ -253,21 +355,15 @@
       "entityRanges": []
     },
     {
-      "key": "enqmj",
-      "text": "Instead, look for Unsaturated Omega-3 Fat",
-      "type": "unstyled",
+      "key": "5do4l",
+      "text": "Benefits of magnesium supplements",
+      "type": "header-two",
       "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 18,
-          "length": 23,
-          "style": "BOLD"
-        }
-      ],
+      "inlineStyleRanges": [],
       "entityRanges": []
     },
     {
-      "key": "2n75a",
+      "key": "7nl54",
       "text": "",
       "type": "unstyled",
       "depth": 0,
@@ -275,39 +371,7 @@
       "entityRanges": []
     },
     {
-      "key": "24a7g",
-      "text": "Some excellent sources of unsaturated omega-3 fat are:",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "8pcfr",
-      "text": "- Fatty fish like salmon, mackerel, sardine, etc.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "eq8ar",
-      "text": "- Grass-fed beef",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "27jf1",
-      "text": "- Olive oil",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "efo8d",
+      "key": "2kltl",
       "text": "",
       "type": "unstyled",
       "depth": 0,
@@ -315,250 +379,7 @@
       "entityRanges": []
     },
     {
-      "key": "8ft8i",
-      "text": "Controlling Blood Sugar TRICK #2: Get Some Push-ups or Any Kind of Strength Exercise",
-      "type": "header-four",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "dilua",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "6cm5i",
-      "text": "Cardio exercise does help, but strength exercise will provide you greater result.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "fbaq9",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "fj64p",
-      "text": "Because in order to keep your blood sugar under control, you need to get your entire body moving.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "305td",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "a04",
-      "text": "And the BEST way to do that is STRENGTH EXERCISE.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "h0kj",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "drcjs",
-      "text": "You certainly do NOT have to put a lot of pressure on yourself, but JUST a few push-ups and some squats per day will give you a full control of your blood sugar levels.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "6e5va",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "2p7g2",
-      "text": "Strength exercise also helps you ditch your stress as well as gain tons of energy.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "36as5",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "5svc4",
-      "text": "Controlling Blood Sugar TRICK #3: Get Relaxed!",
-      "type": "header-four",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "fv0aq",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "8tqpk",
-      "text": "Stress can sabotage all of your attempt to control your blood sugar. It causes both physical and mental distress on the body, which makes keeping blood sugar levels harder.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "d5845",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "9a360",
-      "text": "Not to mention, when you are stressed, you tend to overeat. And this surely can make your blood sugar skyrocket.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "79lhb",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "6268k",
-      "text": "With all that said, staying calm and relax are vital in regulating blood sugar.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "a5vcd",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "3h5v3",
-      "text": "You can try different methods to help you relax. Such simple method like meditation or breathing exercise does great!",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "67s8l",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "cbqq9",
-      "text": "These tricks will help, but…",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "d88bf",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "e19ad",
-      "text": "If you are looking for a way to permanently REVERSE your Type 2 Diabetes and never worry about your blood sugar again, here’s what you need:",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "b64gi",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "ble2",
-      "text": "A recent medical breakthrough at Newcastle University has revealed 3 Proven Steps to Reverse Type-2 Diabetes.",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [
-        {
-          "offset": 0,
-          "length": 109,
-          "style": "BOLD"
-        },
-        {
-          "offset": 0,
-          "length": 109,
-          "style": "green"
-        }
-      ],
-      "entityRanges": []
-    },
-    {
-      "key": "ehn67",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "aubk2",
-      "text": "",
-      "type": "unstyled",
-      "depth": 0,
-      "inlineStyleRanges": [],
-      "entityRanges": []
-    },
-    {
-      "key": "4pge7",
+      "key": "8o9ne",
       "text": " ",
       "type": "atomic",
       "depth": 0,
@@ -567,13 +388,775 @@
         {
           "offset": 0,
           "length": 1,
-          "key": 3
+          "key": 4
         }
       ]
     },
     {
-      "key": "7i3ap",
+      "key": "r1ki",
+      "text": "First, taking magnesium supplements ensures you get enough magnesium, protects yourself from magnesium deficiency symptoms.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 93,
+          "length": 29,
+          "key": 5
+        }
+      ]
+    },
+    {
+      "key": "f7efm",
       "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "dh7ts",
+      "text": "Second, taking magnesium may boost the treatment's effectiveness of following conditions:",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "3gc7u",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "c9rei",
+      "text": "1. Diabetes",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "dell5",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "5loum",
+      "text": "Type 2 diabetics or prediabetics are often found low in magnesium. Magnesium plays an important role in glucose regulation. One study discovered that magnesium is also known to boost insulin sensitivity in people with type 2 diabetes. Another study also concluded that daily intake of magnesium supplement at dose 365 mg for 6 month increase 7% in fasting glucose level.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 128,
+          "length": 5,
+          "key": 6
+        },
+        {
+          "offset": 243,
+          "length": 5,
+          "key": 7
+        }
+      ]
+    },
+    {
+      "key": "5qr27",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "652io",
+      "text": "2. High blood pressure and high cholesterol",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "3dptu",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "3pdf3",
+      "text": "Magnesium deficiency is associated with elevated blood pressure. A clinical study discovered that taking higher dietary magnesium can significantly lower both systolic and diastolic blood pressure while increase the HDL cholesterol (the \"good\" cholesterol) levels.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 67,
+          "length": 14,
+          "key": 8
+        }
+      ]
+    },
+    {
+      "key": "97c7n",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8kn68",
+      "text": "3. Osteoporosis",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "32qru",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "e97mh",
+      "text": "Osteoporosis are often found in people who do not get adequate amount of calcium, vitamin D, magnesium, and other micronutrients. To reduce the risk of osteoporosis, make sure you get enough nutrients through balanced diet and supplements, as well as frequent exercise.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "5i1na",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "cc0bd",
+      "text": "4. Fibromyalgia",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "a1uv4",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "b46d1",
+      "text": "In a clinical study involved 24 fibromyalgia patients, the daily dose of 400 mg magnesium and 1,600 mg malic acid in 6 months helped reduce the pain and tenderness. This is because magnesium can help the muscle to relax.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 5,
+          "length": 14,
+          "key": 9
+        }
+      ]
+    },
+    {
+      "key": "7mkvo",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "20gv7",
+      "text": "5. Migraine headache",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "fll17",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "2hv3k",
+      "text": "Scientists found out that people with migraine headache are lack of ionized magnesium, and using magnesium supplements may help prevent migraine headaches, according to one study.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 173,
+          "length": 6,
+          "key": 10
+        }
+      ]
+    },
+    {
+      "key": "2dt0s",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "ducip",
+      "text": "Magnesium supplement can also help women with menstrual migraine headache.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "b5npd",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "b5hf2",
+      "text": "6. Restless legs syndrome",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "dh17i",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "1q60h",
+      "text": "Magnesium supplements can promote relief to restless legs syndrome - a conclusion of a study involved 10 people.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 87,
+          "length": 5,
+          "key": 11
+        }
+      ]
+    },
+    {
+      "key": "f7m40",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "4ii94",
+      "text": "7. Stroke",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "505et",
+      "text": "A meta-analysis of several studies concluded that dietary magnesium intake can help reduce the risk of stroke. Scientists found out that people who consumed 100 mg magnesium more per day had lower risk of stroke by 8%.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 2,
+          "length": 13,
+          "key": 12
+        }
+      ]
+    },
+    {
+      "key": "5jnnr",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "efobc",
+      "text": "Magnesium supplements appear to help prevent other conditions such as asthma, depression, hearing loss from excessive noise, menstrual pain and premenstrual syndrome (PMS), arrhythmia, heart failure and recently has found to reduce risk of colorectal cancer.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8gg5a",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "sm05",
+      "text": " ",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 0,
+          "length": 1,
+          "key": 13
+        }
+      ]
+    },
+    {
+      "key": "a3n5",
+      "text": " ",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 0,
+          "length": 1,
+          "key": 14
+        }
+      ]
+    },
+    {
+      "key": "4urdh",
+      "text": "It's hard to say which magnesium supplement is the best. It depends heavily on your purpose and budget.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "bjnf4",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "bbp4e",
+      "text": " ",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 0,
+          "length": 1,
+          "key": 15
+        }
+      ]
+    },
+    {
+      "key": "sibg",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "evdgl",
+      "text": "Here is the checklist will help you to choose your most suitable magnesium supplement:",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "81cc9",
+      "text": "What do you use magnesium supplement for? To get enough magnesium, or to help medical condition?",
+      "type": "unordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "dd429",
+      "text": "How much magnesium do you need a day? Some supplement provide 100 mg Mg while others provide 400 mg Mg per one tablet. You're expected to receive 50% of magnesium from diet, so there is no reason to take a tablet with 400 mg Mg. Notice that too much magnesium intake will lower the absorption and can cause toxic. It's best to consult your doctor for optimal recommended dosage.",
+      "type": "unordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "c1svn",
+      "text": "Consider magnesium supplement form. The absorption rate varies by forms. Moreover, some forms appears to cause more side effects than others. See more detail below.",
+      "type": "unordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "80qcf",
+      "text": "Inspect the labels: Product labels should indicate the amount of actual magnesium (or \"elemental\" magnesium) per dosage unit.",
+      "type": "unordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8dd91",
+      "text": "Forms of magnesium supplements",
+      "type": "header-five",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "csijt",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "f6sdr",
+      "text": "Magnesium supplements are available in many forms.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "693ug",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "85egt",
+      "text": "Magnesium Oxide is the least bioavailable form of magnesium supplement with a 4% absorption rate.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 0,
+          "length": 15,
+          "style": "BOLD"
+        }
+      ],
+      "entityRanges": []
+    },
+    {
+      "key": "9h9eh",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "837lf",
+      "text": "Magnesium Chloride is the most bioactive form of magnesium supplements because it dissolves fast in water. Magnesium chloride is less likely to cause diarrhea, which makes it more appropriate for people needs higher doses. Magnesium chloride is more common used in topical than oral products",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 0,
+          "length": 18,
+          "style": "BOLD"
+        }
+      ],
+      "entityRanges": []
+    },
+    {
+      "key": "3su7j",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "b20b",
+      "text": "Magnesium Citrate is the most common form in the magnesium supplement market. Magnesium Citrate is more easy for body to absorb because Magnesium in this form is bonded with acid citric which increases the absorption rate. Other forms of magnesium acid complexes including: Magnesium Ascorbate, Magnesium Fumarate, Magnesium Gluconate, Magnesium Lactate, Magnesium Malate, Magnesium Pidolate, Magnesium Glutamate and Magnesium Aspartate",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 0,
+          "length": 17,
+          "style": "BOLD"
+        }
+      ],
+      "entityRanges": []
+    },
+    {
+      "key": "8a00i",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "3gp87",
+      "text": "Magnesium Glycinate is also more readily absorbed by the body. In this forms Magnesium is bonded with amino acid glycine. The amino acid has neurotranmistter relaxing property. This is good magnesium supplement form if you wish to receive the mental calmness and relaxation.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 0,
+          "length": 19,
+          "style": "BOLD"
+        }
+      ],
+      "entityRanges": []
+    },
+    {
+      "key": "4k627",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "fcmk4",
+      "text": "Magnesium Orotate has raised concerns about safety because of its orotic acid content, which was found associated to liver tumor development in this and this study. Though it's safe to consume at low dose at 50 mg/kg/day, e.g. 7,000 mg for a 70 kg 154 lb. adult, because of this safety concern, we don't recommend Magnesium Orotate.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 0,
+          "length": 17,
+          "style": "BOLD"
+        }
+      ],
+      "entityRanges": [
+        {
+          "offset": 144,
+          "length": 4,
+          "key": 16
+        },
+        {
+          "offset": 153,
+          "length": 4,
+          "key": 17
+        }
+      ]
+    },
+    {
+      "key": "eeci5",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "frgu3",
+      "text": "Magnesium Taurate is a combination of magnesium and amino acid taurine. is often recommended for helping heart and cardiac diseases.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        {
+          "offset": 0,
+          "length": 17,
+          "style": "BOLD"
+        }
+      ],
+      "entityRanges": []
+    },
+    {
+      "key": "4dkcn",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "9i9a1",
+      "text": "Magnesium itself has a poor absorption rate. So choosing a readily-absorbed form of magnesium supplement is beneficial. So these forms are recommended: Magnesium Citrate, Magnesium Glycinate, Magnesium Lactate and Magnesium Gluconate.",
+      "type": "note",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "9srq",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "ct1tf",
+      "text": "Best magnesium supplement brands",
+      "type": "header-two",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "e848b",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "1to55",
+      "text": "Every penny is hard earned, so we want to help you ensure it is spent well. You already take times & effort to swallow supplements, make sure you get the most out of them.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "25iek",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "9372a",
+      "text": "Not every magnesium supplement is equal. Nor expensive means better. With the instruction above, we believe you arm up an adequate knowledge in choosing the best supplements for you.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "80dm6",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "c57c9",
+      "text": "Nevertheless, we also do research and come up with these recommendations which are most economical - provide forms of magnesium.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "lv38",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "5j26g",
+      "text": " ",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 0,
+          "length": 1,
+          "key": 18
+        }
+      ]
+    },
+    {
+      "key": "d1opg",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "8ulos",
+      "text": "",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "9aqj1",
+      "text": " ",
+      "type": "atomic",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 0,
+          "length": 1,
+          "key": 19
+        }
+      ]
+    },
+    {
+      "key": "919ak",
+      "text": "Caution:",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "fuvod",
+      "text": "People with high risk of magnesium deficiency should take calcium at bedtime to avoid inhibiting dietary magnesium absorption.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": []
+    },
+    {
+      "key": "5vtur",
+      "text": "Because magnesium supplements often cause diarrhea, taking magnesium with food can reduce the occurrence of diarrhea or consider take transdermal magnesium.",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [
+        {
+          "offset": 134,
+          "length": 21,
+          "key": 20
+        }
+      ]
+    },
+    {
+      "key": "5os8t",
+      "text": "If you are already taking micro-mineral supplements such as zinc, consider take magnesium supplement at different time to avoid nutrient-nutrient intervention.",
       "type": "unstyled",
       "depth": 0,
       "inlineStyleRanges": [],

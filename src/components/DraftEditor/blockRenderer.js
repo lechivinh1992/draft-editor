@@ -2,6 +2,7 @@ import { Entity } from 'draft-js'
 import DraftEditorBlock from 'draft-js/lib/DraftEditorBlock.react'
 import Media from '../../elements/editable/Media'
 import Html from '../../elements/readOnly/Html'
+import Table from '../../elements/editable/Table'
 import Markdown from '../../elements/readOnly/Markdown'
 
 export default function blockRenderer(block, props) {
@@ -23,6 +24,12 @@ export default function blockRenderer(block, props) {
         return {
           component: Markdown,
           editable: false,
+        }
+      case 'table':
+        return {
+          component: Table,
+          editable: false,
+          props
         }
       default:
         return {

@@ -1,6 +1,16 @@
 import React, { Component, PropTypes } from 'react'
-import { Editor, EditorState, Entity, RichUtils, AtomicBlockUtils, convertToRaw, convertFromRaw } from 'draft-js'
+import {
+  Editor,
+  EditorState,
+  Entity,
+  RichUtils,
+  AtomicBlockUtils,
+  convertToRaw,
+  convertFromRaw,
+  DefaultDraftBlockRenderMap
+} from 'draft-js'
 import { Map } from 'immutable'
+import papa from 'papaparse'
 import decorator from '../../decorator'
 import blockRenderer from './blockRenderer'
 import getBlockStyle from '../../getBlockStyle'
@@ -15,6 +25,10 @@ import {
   getSelectedBlockElement,
   getSelectionCoords
 } from './utils/selection'
+
+const blockRenderMap = DefaultDraftBlockRenderMap.set('note', {
+  element: 'div'
+})
 
 export default class DraftEditor extends Component {
   static propTypes = {
@@ -140,12 +154,47 @@ export default class DraftEditor extends Component {
     this.onChange(editorState)
   };
 
-  openCloudinary() {
+  openCloudinary = () => {
     cloudinary.openUploadWidget({ cloud_name: 'dpl3us1zw', upload_preset: 'qlolfyyu' },
       (error, result) => {
         console.log(error, result)
       })
-  }
+  };
+
+  createObject = (columns, array) => {
+    const obj = {}
+    for (let i = 0; i < columns.length; i++) {
+      obj[columns[i]] = array[i]
+    }
+    return obj
+  };
+
+  pasteTable = (array) => {
+    const columns = array[0]
+    console.log(columns)
+    const data = []
+    for (let i = 1; i < array.length; i++) {
+      data.push(this.createObject(columns, array[i]))
+    }
+
+    const entityKey = Entity.create('table', 'IMMUTABLE', { columns, data })
+    const editorState = AtomicBlockUtils.insertAtomicBlock(
+      this.state.editorState,
+      entityKey,
+      ' '
+    )
+
+    this.onChange(editorState)
+  };
+
+  handlePastedText = (text, html) => {
+    console.log('text', html)
+    const rawJson = papa.parse(text)
+    // console.log(rawJson)
+    this.pasteTable(rawJson.data)
+    return true
+    // console.log('html', html)
+  };
 
   confirmLink = (e) => {
     e.preventDefault()
@@ -263,8 +312,10 @@ export default class DraftEditor extends Component {
             editorState={editorState}
             blockStyleFn={getBlockStyle}
             blockRendererFn={customBlockRenderer}
+            blockRenderMap={blockRenderMap}
             customStyleMap={customStyleMap}
             onChange={this.onChange}
+            handlePastedText={this.handlePastedText}
             placeholder="Write something..."
             readOnly={this.state.editors.count()}
             spellCheck

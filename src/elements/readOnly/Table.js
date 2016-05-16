@@ -2,29 +2,28 @@ import React from 'react'
 import { Entity } from 'draft-js'
 
 export default (props) => {
-  const { entities } = props
-  const fields = Object.keys(entities[0])
-
+  const entity = Entity.get(props.block.getEntityAt(0))
+  const { columns, data } = entity.getData()
+  // console.log(data)
+  
   return (
-    <div>
-      <table>
-        <thead>
-        <tr>
-          {fields.map((field, idx) => (
-            <th key={idx}>{field}</th>
+    <table>
+      <thead>
+      <tr>
+        {columns.map((column, idx) => (
+          <th key={idx}>{column}</th>
+        ))}
+      </tr>
+      </thead>
+      <tbody>
+      {data.map((entity, idx) => (
+        <tr key={idx}>
+          {columns.map((column, subIdx) => (
+            <td key={subIdx}>{entity[column]}</td>
           ))}
         </tr>
-        </thead>
-        <tbody>
-        {entities.map((entity, idx) => (
-          <tr key={idx}>
-            {fields.map((field, subIdx) => (
-              <td key={subIdx}>{entity[field]}</td>
-            ))}
-          </tr>
-        ))}
-        </tbody>
-      </table>
-    </div>
+      ))}
+      </tbody>
+    </table>
   )
 }
