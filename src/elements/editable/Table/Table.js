@@ -5,6 +5,7 @@ import MarkdownFormatter from './MarkdownFormatter'
 import Modal from 'react-modal'
 import ColumnEditor from './ColumnEditor'
 import 'react-data-grid/themes/react-data-grid.css'
+import './Table.css'
 
 const defaultRows = []
 for (let i = 1; i < 10; i++) {
@@ -103,7 +104,7 @@ export default class Table extends Component {
     )
 
     return (
-      <div>
+      <div className="table">
         <ReactDataGrid
           columns={columns}
           enableCellSelect={this.state.isEdit}

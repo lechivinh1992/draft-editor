@@ -1,0 +1,9 @@
+.table .react-grid-HeaderCell {
+    padding: 0;
+}.table .react-grid-HeaderCell .widget-HeaderCell__value {
+    padding: 8px;
+}
+#content {
+    width: 100%;
+    overflow-y: auto;
+}
