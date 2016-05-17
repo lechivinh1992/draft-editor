@@ -18,7 +18,9 @@ export default class InlineToolbar extends Component {
 
   state = {
     isLinkEdit: false,
-    url: ''
+    isLinkToEdit: false,
+    url: '',
+    id: ''
   };
 
   onToggleStyle = (inlineStyle) => {
@@ -30,27 +32,6 @@ export default class InlineToolbar extends Component {
       )
     )
   };
-
-  onApplyEntity = () => {
-    const { editorState } = this.props
-
-    const entityKey = Entity.create('link-to', 'MUTABLE', { id: 'hello' })
-    const contentState = editorState.getCurrentContent()
-
-    const entity = Modifier.applyEntity(
-      contentState,
-      editorState.getSelection(),
-      entityKey
-    )
-
-    const nextEditorState = EditorState.push(
-      editorState,
-      entity,
-      'apply-entity'
-    )
-
-    this.props.onChangeSimple(nextEditorState)
-  }
 
   onToggleColor = (toggledColor) => {
     const { editorState, onChange } = this.props
@@ -94,6 +75,10 @@ export default class InlineToolbar extends Component {
     this.setState({ isLinkEdit: true, url: '' }, () => this.refs.url.focus())
   };
 
+  onShowLinkToEdit = () => {
+    this.setState({ isLinkToEdit: true, id: '' }, () => this.refs.url.focus())
+  };
+
   onUrlChange = (e) => this.setState({ url: e.target.value });
 
   onConfirmLink = (e) => {
@@ -108,9 +93,31 @@ export default class InlineToolbar extends Component {
     }
   };
 
+  applyLinkTo = () => {
+    const { editorState } = this.props
+
+    const entityKey = Entity.create('link-to', 'MUTABLE', { id: this.state.id })
+    const contentState = editorState.getCurrentContent()
+
+    const entity = Modifier.applyEntity(
+      contentState,
+      editorState.getSelection(),
+      entityKey
+    )
+
+    const nextEditorState = EditorState.push(
+      editorState,
+      entity,
+      'apply-entity'
+    )
+
+    this.props.onChangeSimple(nextEditorState)
+    this.setState({ isLinkToEdit: false, id: '' })
+  }
+
   confirmLink = (urlValue) => {
     const { editorState } = this.props
-    const entityKey = Entity.create('LINK', 'MUTABLE', { url: urlValue, alt: 'Hello' })
+    const entityKey = Entity.create('LINK', 'MUTABLE', { url: urlValue })
     const nextEditorState = RichUtils.toggleLink(
       editorState,
       editorState.getSelection(),
@@ -120,6 +127,13 @@ export default class InlineToolbar extends Component {
     this.props.onChangeSimple(nextEditorState)
     this.setState({ isLinkEdit: false, url: '' })
   };
+
+  applyLinkToKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      e.preventDefault()
+      this.applyLinkTo()
+    }
+  }
 
   render() {
     const { editorState, position } = this.props
@@ -135,6 +149,19 @@ export default class InlineToolbar extends Component {
             onKeyDown={this.onUrlEnterKeyDown}
           />
           <button onClick={this.onConfirmLink}>Confirm Link</button>
+        </div>
+      )
+    }
+    if (this.state.isLinkToEdit) {
+      return (
+        <div id="inlineToolbar" className={toolbar} style={position}>
+          <input
+            type="text" ref="url"
+            value={this.state.id}
+            onChange={(e) => this.setState({ id: e.target.value })}
+            onKeyDown={this.applyLinkToKeyDown}
+          />
+          <button onClick={this.applyLinkTo}>Add id</button>
         </div>
       )
     }
@@ -176,7 +203,7 @@ export default class InlineToolbar extends Component {
               // active={currentStyle.has(type.style)}
               label="Link To"
               icon="more"
-              onToggle={this.onApplyEntity}
+              onToggle={this.onShowLinkToEdit}
               // style={type.style}
             />
           </ul>

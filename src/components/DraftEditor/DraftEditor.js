@@ -93,6 +93,7 @@ export default class DraftEditor extends Component {
     const { editors } = this.state
     // Determine which is editing
     this.setState({ editors: editors.set(blockKey, true) })
+    console.log(blockKey)
   };
 
   onFinishEdit = (blockKey) => {
@@ -154,12 +155,12 @@ export default class DraftEditor extends Component {
     this.onChange(editorState)
   };
 
-  openCloudinary = () => {
-    cloudinary.openUploadWidget({ cloud_name: 'dpl3us1zw', upload_preset: 'qlolfyyu' },
-      (error, result) => {
-        console.log(error, result)
-      })
-  };
+  // openCloudinary = () => {
+  //   cloudinary.openUploadWidget({ cloud_name: 'dpl3us1zw', upload_preset: 'qlolfyyu' },
+  //     (error, result) => {
+  //       console.log(error, result)
+  //     })
+  // };
 
   createObject = (columns, array) => {
     const obj = {}
@@ -195,6 +196,13 @@ export default class DraftEditor extends Component {
     return true
     // console.log('html', html)
   };
+
+  openCloudinary() {
+    cloudinary.openUploadWidget({ cloud_name: 'dpl3us1zw', upload_preset: 'qlolfyyu' },
+      (error, result) => {
+        console.log(error, result)
+      })
+  }
 
   confirmLink = (e) => {
     e.preventDefault()
@@ -291,7 +299,8 @@ export default class DraftEditor extends Component {
 
     const customBlockRenderer = (block) => blockRenderer(block, {
       startEdit: this.onStartEdit,
-      finishEdit: this.onFinishEdit
+      finishEdit: this.onFinishEdit,
+      remove: this.onRemove
     })
 
     return (
@@ -305,6 +314,8 @@ export default class DraftEditor extends Component {
             <ImageChoose
               active={this.state.showImageChooser}
               onClose={this.onCloseImageChoose}
+              editorState={editorState}
+              onChange={this.onChange}
             />
           )}
           <Editor

@@ -21,6 +21,7 @@
 
 .image {
   //opacity: 0.5;
+  max-width: 100%;
 }
 
 .overlay {
@@ -51,5 +52,10 @@
 }
 
 .caption {
+  font-style: italic;
   text-align: center;
+  align-self: center;
+  span:hover {
+    cursor: pointer;
+  }
 }

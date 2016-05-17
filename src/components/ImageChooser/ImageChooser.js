@@ -4,9 +4,12 @@ import { bindActionCreators } from 'redux'
 import * as actions from '../../redux/actions/images'
 import Modal from 'react-modal'
 import styles from './ImageChooser.scss'
+import AddImage from '../AddImage'
 
 class ImageChooser extends Component {
   static propTypes = {
+    editorState: PropTypes.object,
+    onChange: PropTypes.func,
     active: PropTypes.bool.isRequired,
     onAfterOpen: PropTypes.func,
     onClose: PropTypes.func,
@@ -22,7 +25,7 @@ class ImageChooser extends Component {
   };
 
   render() {
-    const { images, selectImage, selected, active, onAfterOpen, onClose } = this.props
+    const { editorState, onChange, images, selectImage, selected, active, onAfterOpen, onClose } = this.props
     return (
       <Modal
         isOpen={active}
@@ -31,6 +34,7 @@ class ImageChooser extends Component {
         closeTimeoutMS={1000}
       >
         <h1>Image Chooser</h1>
+        <AddImage editorState={editorState} onChange={onChange} />
         <div>
           <input type="text" />
           <button onClick={this.loadImages}>Load Images</button>
